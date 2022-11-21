@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone by Munawar johar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome website link  -->
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="nav_left">
+            <img src="img/facebook.png" alt="loading" class="logo">
+
+            <ul>
+                <li><img src="img/notification.png" alt="loading"></li>
+                <li><img src="img/inbox.png" alt="loading"></li>
+                <li><img src="img/video.png" alt="loading"></li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="nav_right">
+
+            <div class="search_box">
+                <img src="img/search.png" alt="loading">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav_user_icon online" onclick="DropDownToggle()">
+                <img src="img/m_Profile.PNG" alt="loading">
+            </div>
+
+        </div>
+
+        <!-- dropdown menu  -->
+
+        <div class="dropDown">
+
+
+            <div id="Dark_btn">
+                <span></span>
+            </div>
+
+            <div class="dropDown_inner">
+                <div class="user_profile">
+
+                    <img src="img/m_Profile.PNG" alt="loading">
+                    <div>
+                        <p>Munawar Johar</p>
+                        <a href="#">See your profile</a>
+
+                    </div>
+
+                </div>
+                <hr>
+
+                <div class="user_profile">
+
+                    <img src="img/feedback.png" alt="loading">
+                    <div>
+                        <p>Give Feeback </p>
+                        <a href="#">Help us for new development</a>
+
+                    </div>
+
+                </div>
+                <hr>
+
+                <div class="dropDown_links">
+
+                    <img src="img/setting.png" alt="loading" class="setting_icon">
+
+                    <a href="#">Settings & Privacy <img src="img/arrow.png" width="10px" alt="loading"></a>
+                </div>
+
+                <div class="dropDown_links">
+
+                    <img src="img/help.png" alt="loading" class="setting_icon">
+
+                    <a href="#">Help & Support <img src="img/arrow.png" width="10px" alt="loading"></a>
+                </div>
+
+                <div class="dropDown_links">
+
+                    <img src="img/display.png" alt="loading" class="setting_icon">
+
+                    <a href="#">Display & Accessibility <img src="img/arrow.png" width="10px" alt="loading"></a>
+                </div>
+
+                <div class="dropDown_links">
+
+                    <img src="img/logout.png" alt="loading" class="setting_icon">
+
+                    <a href="#">Logout <img src="img/arrow.png" width="10px" alt="loading"></a>
+                </div>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+
+    <div class="container">
+
+        <!-- left sidebar start here  -->
+        <div class="left_sidebar">
+            <div class="important_links">
+
+                <a href="#"><img src="img/news.png" alt="loading">Latest News</a>
+
+                <a href="#"><img src="img/friends.png" alt="loading">Friends</a>
+
+                <a href="#"><img src="img/group.png" alt="loading">Group</a>
+
+                <a href="#"><img src="img/marketplace.png" alt="loading">Marketplace</a>
+
+                <a href="#"><img src="img/watch.png" alt="loading">Watch</a>
+
+                <a href="#">See More</a>
+
+            </div>
+
+            <div class="shorcut_links">
+                <p>Your Shortcuts</p>
+
+                <a href="#"><img src="img/shortcut-2.png" alt="loading">Pygame Development</a>
+
+                <a href="#"><img src="img/shortcut-1.png" alt="loading">Complete Web Development</a>
+
+                <a href="#"><img src="img/shortcut-4.png" alt="loading">Wordpress Course</a>
+
+                <a href="#"><img src="img/shortcut-3.png" alt="loading">Full Stack Developers</a>
+
+            </div>
+
+        </div>
+        <!-- main content div start here  -->
+        <div class="main_content">
+
+            <div class="story_gallery">
+                <div class="story story1">
+                    <img src="img/m_Profile.PNG" alt="loading">
+                    <p>Post Story</p>
+
+                </div>
+
+
+                <div class="story story2">
+                    <img src="img/hanif.jpg" alt="loading">
+                    <p>Muhammad Hanif</p>
+
+                </div>
+
+                <div class="story story3">
+                    <img src="img/dilwar.jpg" alt="loading">
+                    <p>Dilawar Baig</p>
+
+                </div>
+
+                <div class="story story4">
+                    <img src="img/sharif.jpg" alt="loading">
+                    <p>Muhammad Sharif</p>
+
+                </div>
+
+                <div class="story story5">
+                    <img src="img/hassnain.jpg" alt="loading">
+                    <p>Hassnain Haider</p>
+
+                </div>
+
+            </div>
+
+            <div class="write_post_container">
+                <div class="user_profile">
+
+                    <img src="img/m_Profile.PNG" alt="loading">
+                    <div>
+                        <p>Munawar Johar</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+
+                    </div>
+
+                </div>
+
+                <div class="post_input_container">
+
+                    <textarea rows="3" placeholder="What's on your mind , Munawar Johar ?"></textarea>
+
+                    <div class="add_post_links">
+                        <a href="#"> <img src="img/live-video.png" alt="loading">Live Video</a>
+
+                        <a href="#"> <img src="img/photo.png" alt="loading">Photo/Video</a>
+
+                        <a href="#"> <img src="img/feeling.png" alt="loading">Feling Activity</a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+
+                        <img src="img/m_Profile.PNG" alt="loading">
+                        <div>
+                            <p>Munawar Johar</p>
+                            <span class="post_span">August 03 2022, 11:40 am</span>
+
+                        </div>
+
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+
+                </div>
+
+
+                <p class="post_text">Complete Web Development Crash course by Munawar johar you can learn basics conceopts to advance development of web development get started learning today <a href="#">Munawar
+                        Johar</a></p>
+                <img src="img/html.gif" alt="loading" class="post_img">
+
+
+                <div class="post_row">
+                    <div class="activity_icon">
+
+
+                        <div> <img src="img/like-blue.png" alt="loading"> 1.2K</div>
+                        <div> <img src="img/comments.png" alt="loading"> 388</div>
+                        <div> <img src="img/share.png" alt="loading"> 33</div>
+
+
+                    </div>
+
+                    <div class="post_proflie_icon">
+                        <img src="img/m_Profile.PNG" alt="loading"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+
+                        <img src="img/raziq.png" alt="loading">
+                        <div>
+                            <p>Raziq hussain</p>
+                            <span class="post_span">August 04 2022, 12:40 pm</span>
+
+                        </div>
+
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+
+                </div>
+
+
+                <p class="post_text">maqpon xar pull per Dilawar ke dukan ky pass ek selfy chacha ke neye Car bee back may pics credit <a>Dilawar Baig</a> <span style="color:red;">&#10084</span> <span style="color:rgb(152, 70, 125);">&#10084</span> <span style="color:rgb(174, 0, 255);">&#10084</span>                    </p>
+                <img src="img/r.jpg" alt="loading" class="post_img">
+
+
+                <div class="post_row">
+                    <div class="activity_icon">
+
+
+                        <div> <img src="img/like-blue.png" alt="loading"> 171</div>
+                        <div> <img src="img/comments.png" alt="loading"> 38</div>
+                        <div> <img src="img/share.png" alt="loading"> 2</div>
+
+
+                    </div>
+
+                    <div class="post_proflie_icon">
+                        <img src="img/raziq.png" alt="loading"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+
+                        <img src="img/mir.jpg" alt="loading">
+                        <div>
+                            <p>Ali Ameer Torghan</p>
+                            <span class="post_span">August 01 2022, 7:30 am</span>
+
+                        </div>
+
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+
+                </div>
+
+
+                <p class="post_text">The Land of Beauty Kashmir </p>
+                <img src="img/bai.jpg" alt="loading" class="post_img">
+
+
+                <div class="post_row">
+                    <div class="activity_icon">
+
+
+                        <div> <img src="img/like-blue.png" alt="loading"> 477</div>
+                        <div> <img src="img/comments.png" alt="loading">223</div>
+                        <div> <img src="img/share.png" alt="loading"> 3</div>
+
+
+                    </div>
+
+                    <div class="post_proflie_icon">
+                        <img src="img/bai.jpg" alt="loading"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+
+                        <img src="img/hanif.jpg" alt="loading">
+                        <div>
+                            <p>Muhammad Hanif</p>
+                            <span class="post_span">August 05 2022, 11:50 am</span>
+
+                        </div>
+
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+
+                </div>
+
+
+                <p class="post_text">How to Become a data scientist complete road map for future data scientist .....
+                </p>
+                <img src="img/web.png" alt="loading" class="post_img">
+
+
+                <div class="post_row">
+                    <div class="activity_icon">
+
+
+                        <div> <img src="img/like-blue.png" alt="loading"> 101</div>
+                        <div> <img src="img/comments.png" alt="loading">44</div>
+                        <div> <img src="img/share.png" alt="loading"> 34</div>
+
+
+                    </div>
+
+                    <div class="post_proflie_icon">
+                        <img src="img/hanif.jpg" alt="loading"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+
+                        <img src="img/mir.jpg" alt="loading">
+                        <div>
+                            <p>Muhammad Sohail</p>
+                            <span class="post_span">March 09 2022, 11:50 am</span>
+
+                        </div>
+
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+
+                </div>
+
+
+                <p class="post_text">Add home with family.
+                </p>
+                <img src="img/sohai.JPG" alt="loading" class="post_img">
+
+
+                <div class="post_row">
+                    <div class="activity_icon">
+
+
+                        <div> <img src="img/like-blue.png" alt="loading"> 11</div>
+                        <div> <img src="img/comments.png" alt="loading">4</div>
+                        <div> <img src="img/share.png" alt="loading"> 1</div>
+
+
+                    </div>
+
+                    <div class="post_proflie_icon">
+                        <img src="img/mir.jpg" alt="loading"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+
+                        <img src="img/mir.jpg" alt="loading">
+                        <div>
+                            <p>Muhammad Sohail</p>
+                            <span class="post_span">March 08 2022, 11:50 am</span>
+
+                        </div>
+
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+
+                </div>
+
+
+                <p class="post_text">My Mentors Khuda Salamatrakghay ameen .
+                </p>
+                <img src="img/baya.JPG" alt="loading" class="post_img">
+
+
+                <div class="post_row">
+                    <div class="activity_icon">
+
+
+                        <div> <img src="img/like-blue.png" alt="loading"> 161</div>
+                        <div> <img src="img/comments.png" alt="loading">67</div>
+                        <div> <img src="img/share.png" alt="loading"> 4</div>
+
+
+                    </div>
+
+                    <div class="post_proflie_icon">
+                        <img src="img/mir.jpg" alt="loading"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+
+                        <img src="img/m_Profile.PNG" alt="loading">
+                        <div>
+                            <p>Munawar Johar</p>
+                            <span class="post_span">August 03 2022, 11:40 am</span>
+
+                        </div>
+
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+
+                </div>
+
+
+                <p class="post_text">During Arif Shahid wedding cermony old is Gold.. Pics Credit goes to <a href="#">Shajawal abbas</a></p>
+                <img src="img/arif.JPG" alt="loading" class="post_img">
+
+
+                <div class="post_row">
+                    <div class="activity_icon">
+
+
+                        <div> <img src="img/like-blue.png" alt="loading"> 676</div>
+                        <div> <img src="img/comments.png" alt="loading"> 389</div>
+                        <div> <img src="img/share.png" alt="loading"> 3</div>
+
+
+                    </div>
+
+                    <div class="post_proflie_icon">
+                        <img src="img/m_Profile.PNG" alt="loading"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load_more_button">Load More</button>
+
+
+        </div>
+        <!-- right sidebar start here  -->
+        <div class="right_sidebar">
+
+
+            <div class="sidebar_title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+
+                <div class="event_left">
+                    <h3>04</h3>
+                    <span>August</span>
+                </div>
+                <div class="event_right">
+                    <h4>Soicial Media</h4>
+                    <p>
+                        <li class="fas fa-map-marker-alt"></li>Skardu Baltistan
+                    </p>
+
+                    <a href="#">More Info</a>
+
+                </div>
+            </div>
+
+
+
+            <div class="event">
+
+                <div class="event_left">
+                    <h3>03</h3>
+                    <span>August</span>
+                </div>
+                <div class="event_right">
+                    <h4>Web Development</h4>
+                    <p>
+                        <li class="fas fa-map-marker-alt"></li>Gilgit Baltistan
+                    </p>
+
+                    <a href="#">More Info</a>
+
+                </div>
+            </div>
+
+
+            <div class="sidebar_title">
+                <h4>Advertisement</h4>
+                <a href="#">Closed</a>
+            </div>
+            <img src="img/code.gif" alt="loading" class="sidebar_adds">
+
+            <div class="sidebar_title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+
+            <div class="online_list">
+                <div class="online">
+
+                    <img src="img/hassnain.jpg" alt="loading">
+                </div>
+
+                <p>Hassnain Haider</p>
+
+            </div>
+
+
+
+            <div class="online_list">
+                <div class="online">
+
+                    <img src="img/raziq.png" alt="loading">
+                </div>
+
+                <p>Raziq hussain</p>
+
+            </div>
+
+
+            <div class="online_list">
+                <div class="online">
+
+                    <img src="img/sharif.jpg" alt="loading">
+                </div>
+
+                <p>Muhammad sharif Asadi</p>
+
+            </div>
+
+            <div class="online_list">
+                <div class="online">
+
+                    <img src="img/adnan.jpg" alt="loading">
+                </div>
+
+                <p>Muhammad Adnan Sami</p>
+
+            </div>
+
+            <div class="online_list">
+                <div class="online">
+
+                    <img src="img/imran.jpg" alt="loading">
+                </div>
+
+                <p>Imran Kazim </p>
+
+            </div>
+
+            <div class="online_list">
+                <div class="online">
+
+                    <img src="img/syedhussain.jpg" alt="loading">
+                </div>
+
+                <p>Syed Muhammad hussain</p>
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright &copy; 2022 by Munawar Johar</p>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
